@@ -1,13 +1,13 @@
 import React from 'react'
 
-const PopularAlbum = () => {
+const PopularAlbum = ({img, h1, p}) => {
   return (
 
     <div className="h-[220px] w-[200px] bg-[#1F1F1F] mt-5  rounded-lg overflow-hidden p-2">
       <img
         className="h-[100px] w-full object-cover rounded"
         src={img}
-        alt="playlist"
+        alt="PopularAlbum"
       />
       <h1 className="text-[16px] mt-2 font-bold truncate">
         {h1}

@@ -33,7 +33,7 @@ const Navbar = () => {
           <ul>Sign up</ul>
         </li>
 
-        <button className="text-black bg-white h-10 w-15 rounded-2xl">Login</button>
+        <button className="text-black bg-white h-10 w-18 rounded-2xl text-[12px] font-bold">Login</button>
       </div>
 
 

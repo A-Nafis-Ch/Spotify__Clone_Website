@@ -8,7 +8,7 @@ const PopularArtist = ({ img, h1, p }) => {
                 <img
                     className="h-[100px] w-[100px] object-cover rounded-full"
                     src={img}
-                    alt="playlist"
+                    alt="Artist"
                 />
             </div>
 
