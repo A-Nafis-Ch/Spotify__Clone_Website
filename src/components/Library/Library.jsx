@@ -2,7 +2,7 @@ import { FaPlus } from "react-icons/fa6";
 
 const Library = () => {
   return (
-    <div className="h-[88vh] w-[30%] md:w-[60%] lg:w-[80%] rounded-lg bg-[#121212] text-white p-5">
+    <div className="h-[88vh] w-[30vw] rounded-lg bg-[#121212] text-white p-5">
       <div className="library-part flex flex-col h-full">
         
         {/* Top */}

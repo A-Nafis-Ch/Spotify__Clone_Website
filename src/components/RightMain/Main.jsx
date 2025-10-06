@@ -9,7 +9,10 @@ import Footer from '../Footer'
 
 const Main = () => {
   return (
-    <div className='h-[88vh] w-[70%] md:w-[140%] lg:w-[160%] rounded-lg bg-[#121212] text-white flex flex-col justify-center items-center p-5 overflow-y-scroll' >
+    <div className='h-[88vh] w-[70vw] rounded-lg bg-[#121212] text-white flex flex-col items-center p-5 overflow-y-scroll'>
+
+
+
 
       
 
@@ -74,9 +77,11 @@ const Main = () => {
 
         </div>
 
+        <div className="footer w-full"><Footer /></div>
+
       
 
-      <Footer />
+      
 
 
     </div>
