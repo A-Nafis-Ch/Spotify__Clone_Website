@@ -1,6 +1,6 @@
 # React + Vite
 
-![Project Template](..src/assets/Spotify_Template.jpg)
+![Project Template](../spotify_clone/src/assets/Spotify_Template.jpg)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
