@@ -1,9 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
+
 import { SlSocialSpotify } from "react-icons/sl";
 import { RiHome5Line } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
 import { BsBrowserSafari } from "react-icons/bs";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   return (
     <nav className="w-full h-[60px] flex flex-row justify-around text-white items-center">
       <div className="icons text-white flex gap-5 ">
@@ -24,7 +30,7 @@ const Navbar = () => {
       </div>
 
       <div className="nav-buttons flex gap-2">
-        <li className="flex gap-5">
+        <li className="flex gap-5 cursor-pointer">
           <ul className="font-bold" >Premium</ul>
           <ul className="font-bold">Support</ul>
           <ul className="font-bold">Download</ul>
@@ -33,7 +39,7 @@ const Navbar = () => {
           <ul>Sign up</ul>
         </li>
 
-        <button className="text-black bg-white h-10 w-18 rounded-2xl text-[12px] font-bold">Login</button>
+        <button  onClick={() => navigate('/login')} className="text-black bg-white h-10 w-18 rounded-2xl text-[12px] font-bold cursor-pointer">Login</button>
       </div>
 
 
