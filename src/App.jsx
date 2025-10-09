@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Library from "./components/Library/Library";
 import Main from "./components/RightMain/Main";
 import Login from "./components/Login/Login";
+import MainSongPlay from "./components/MainSongPlaylist/MainSongPlay";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           path="/"
           element={
             <div>
+              <MainSongPlay />
               <Navbar />
               <div className="flex gap-2">
                 <Library />
