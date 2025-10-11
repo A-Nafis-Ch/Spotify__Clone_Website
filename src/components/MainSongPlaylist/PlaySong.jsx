@@ -2,6 +2,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { IoMdAddCircleOutline } from "react-icons/io";
 import { IoIosMore } from "react-icons/io";
 import { IoIosList } from "react-icons/io";
+import { CiClock2 } from "react-icons/ci";
 
 const PlaySong = () => {
   return (
@@ -34,6 +35,44 @@ const PlaySong = () => {
                     <div className="list ">Lists</div><IoIosList className="h-[25px] w-[20px] " />
                 </div>
 
+                
+
+            </div>
+
+            <div className="title-songs flex justify-between">
+                <p># Title</p>
+                <div className="duration">
+                    <CiClock2 className="h-[20px] w-[20px]"/>
+                </div>
+
+            </div>
+
+            <div className="horz-bar h-[1px] w-[full] border border-gray-400"></div>
+
+            <div className="song-bar bg-[#5A5A5A] rounded-xl mt-2 flex justify-between items-center p-3 ">
+                <div className="songplaybtn">
+                    <FaCirclePlay />
+                </div>
+                <div className="song">
+                    <h3 className="text-7px font-bold">Kashish</h3>
+                    <p className="text-6px">Ashish Bhaatia, Omar Sanu, Kasish Ratnani</p>
+                </div>
+                <div className="add-song">
+                    <IoMdAddCircleOutline />
+                </div>
+
+                <div className="time-duration">
+                    <p>2:49</p>
+                </div>
+                <div className="more-options">
+                    <IoIosMore />
+                </div>
+            </div>
+
+            <div className="playlist-info text-gray-400 mt-4">
+                <p className="text-[15px]">November 22, 2022</p>
+                <p className="text-[14px]">&copy; 2022 Zee Music Company</p>
+                <p className="text-[14px]">&#8471; 2022 Zee Music Company</p>
             </div>
         </div>
       
