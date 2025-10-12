@@ -14,9 +14,9 @@ const Navbar = () => {
     <nav className="w-full h-[60px] flex flex-row justify-around text-white items-center">
       <div className="icons text-white flex gap-5 ">
 
-        <SlSocialSpotify className="h-[40px] md:h-[40px] lg:h-[40px] w-[30px] md:w-[30px] lg:w-[30px]" />
+        <SlSocialSpotify className="h-[40px] md:h-[40px] lg:h-[40px] w-[30px] md:w-[30px] lg:w-[30px] text-green-400" />
 
-        <RiHome5Line className="h-[40px] md:h-[40px] lg:h-[40px] w-[30px] md:w-[30px] lg:w-[30px]" />
+        <RiHome5Line onClick={()=>navigate('/')} className="bg-[#1F1F1F] h-[40px] w-[40px] cursor-pointer rounded-full p-2"/>
 
       </div>
 
@@ -29,8 +29,8 @@ const Navbar = () => {
         <BsBrowserSafari className="h-[40px] md:h-[40px] lg:h-[40px] w-[30px] md:w-[30px] lg:w-[30px]"/>
       </div>
 
-      <div className="nav-buttons flex gap-2">
-        <li className="flex gap-5 cursor-pointer">
+      <div className="nav-buttons flex gap-4">
+        <li className="flex gap-5 cursor-pointer items-center">
           <ul className="font-bold" >Premium</ul>
           <ul className="font-bold">Support</ul>
           <ul className="font-bold">Download</ul>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <ul>Sign up</ul>
         </li>
 
-        <button  onClick={() => navigate('/login')} className="text-black bg-white h-10 w-18 rounded-2xl text-[12px] font-bold cursor-pointer">Login</button>
+        <button  onClick={() => navigate('/login')} className="text-black bg-white h-10 w-17 rounded-2xl text-[12px] font-bold cursor-pointer">Login</button>
       </div>
 
 

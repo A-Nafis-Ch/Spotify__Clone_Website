@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Trendingcard = ({img, h1, p}) => {
+const Trendingcard = ({img, h1, p, onClick}) => {
   return (
-    <div className="h-[220px] w-[200px] bg-[#1F1F1F] mt-5  rounded-lg overflow-hidden p-2">
+    <div onClick={onClick} className=" cursor-pointer h-[220px] w-[200px] bg-[#1F1F1F] mt-5  rounded-lg overflow-hidden p-2">
       <img
         className="h-[100px] w-full object-cover rounded"
         src={img}

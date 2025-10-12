@@ -75,7 +75,7 @@ const Footer = () => {
             <div className="horline-bar border border-2-white width-[100px] mt-10"></div>
 
             <div className="developer-info">
-                <p className='text-gray-400 text-[12px] mt-5'>Developed by <span className='text-white font-bold'>Abdullah Nafis Chowdhury</span></p>
+                <p className='text-gray-400 text-[12px] mt-5'>Developed by <span className='text-white font-bold'>&copy;  Abdullah Nafis Chowdhury</span></p>
             </div>
 
         </div>

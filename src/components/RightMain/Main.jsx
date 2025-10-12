@@ -1,4 +1,5 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom";
+
 import Trendingcard from './Trendingcard'
 import PopularArtist from './PopularArtist'
 import PopularAlbum from './PopularAlbum'
@@ -8,6 +9,8 @@ import Footer from '../Footer'
 
 
 const Main = () => {
+
+  const navigate = useNavigate();
   return (
     <div className='h-[88vh] w-[70vw] rounded-lg bg-[#121212] text-white flex flex-col items-center p-5 overflow-y-scroll'>
 
@@ -19,7 +22,7 @@ const Main = () => {
         <div className="trending-songs">
           <h1 className='text-2xl font-bold'>Trending songs</h1>
           <div className="trendingsongslist flex flex-row gap-2">
-            < Trendingcard img="../src/songdemo1.jpg" h1="Music Heading" p="Habib Wahid, Nancy" />
+            < Trendingcard onClick={()=> navigate('/playlist')} img="../src/songdemo1.jpg" h1="Music Heading" p="Habib Wahid, Nancy" />
             < Trendingcard img="../src/songdemo2.jpg" h1="Don't Say You Love Me" p="Jin" />
             < Trendingcard img="../src/songdemo3.jpg" h1="Kashish" p="Afusic, AliSomroMusic" />
             < Trendingcard img="../src/songdemo4.jpg" h1="Pal Pal" p="Shilpa Rao, Ujwal" />

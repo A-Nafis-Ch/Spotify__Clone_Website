@@ -17,7 +17,7 @@ const App = () => {
           path="/"
           element={
             <div>
-              <MainSongPlay />
+              
               <Navbar />
               <div className="flex gap-2">
                 <Library />
@@ -29,6 +29,10 @@ const App = () => {
 
         {/* Login Route */}
         <Route path="/login" element={<Login />} />
+
+        {/* Playlist Route */}
+
+        <Route path="/playlist" element={<MainSongPlay />} />
       </Routes>
     </BrowserRouter>
   );
