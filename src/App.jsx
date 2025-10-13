@@ -7,6 +7,7 @@ import Library from "./components/Library/Library";
 import Main from "./components/RightMain/Main";
 import Login from "./components/Login/Login";
 import MainSongPlay from "./components/MainSongPlaylist/MainSongPlay";
+import Signup from "./components/Signup/Signup";
 
 const App = () => {
   return (
@@ -26,6 +27,9 @@ const App = () => {
             </div>
           }
         />
+
+         {/* Singup Route */}
+        <Route path="/signup" element={<Signup />} />
 
         {/* Login Route */}
         <Route path="/login" element={<Login />} />

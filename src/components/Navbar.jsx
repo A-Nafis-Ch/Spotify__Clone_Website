@@ -36,7 +36,7 @@ const Navbar = () => {
           <ul className="font-bold">Download</ul>
           <ul>|</ul>
           <ul>Install App</ul>
-          <ul>Sign up</ul>
+          <ul onClick={()=>navigate('/signup')} className="">Sign up</ul>
         </li>
 
         <button  onClick={() => navigate('/login')} className="text-black bg-white h-10 w-17 rounded-2xl text-[12px] font-bold cursor-pointer">Login</button>
