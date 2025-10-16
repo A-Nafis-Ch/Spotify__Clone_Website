@@ -3,6 +3,9 @@ import { RiContractLeftFill } from "react-icons/ri";
 import { RiContractRightFill } from "react-icons/ri";
 import { FaCirclePlay } from "react-icons/fa6";
 import { RiRepeat2Line } from "react-icons/ri";
+import { FaVolumeMute } from "react-icons/fa";
+import { FaVolumeLow } from "react-icons/fa6";
+import { FaVolumeUp } from "react-icons/fa";
 
 const Playbar = () => {
   return (
@@ -37,7 +40,21 @@ const Playbar = () => {
           <div className="end-time">0:00</div>
         </div>
       </div>
-      <div className="playbar-controllers"></div>
+      <div className="playbar-controllers flex flex-row ">
+        <div className="volume-control flex flex-row items-center gap-2">
+          <div className="volume-icon mt-10">
+            <FaVolumeMute className="h-[20px] w-[20px] cursor-pointer" />
+
+            {/* For volume up and down you can use */}
+            {/* <FaVolumeLow className="h-[20px] w-[20px] cursor-pointer" />
+            <aVolumeUp className="h-[20px] w-[20px] cursor-pointer" /> */}
+          </div>
+          <div className="volume-bar mt-10">
+            <div className="volume-dot h-[5px] w-[5px] bg-white rounded-full"></div>
+            <div className="volume-line border border-white-400 h-[2px] w-[100px]"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
