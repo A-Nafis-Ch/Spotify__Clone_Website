@@ -9,7 +9,7 @@ import { FaVolumeUp } from "react-icons/fa";
 
 const Playbar = () => {
   return (
-    <div className="bg-transparent text-white flex flex-row items-center justify-around p-10">
+    <div className="bg-transparent text-white flex flex-row items-center justify-around p-5">
       <div className="currentPlaylist"></div>
       <div className="playbar-btns ">
         <div className="btns flex flex-row items-center justify-center gap-5">

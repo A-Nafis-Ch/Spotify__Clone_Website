@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Tomar Chokher Kajol",
+    "artist": "Habib Wahid, Nancy",
+    "album": "Habib Hits",
+    "cover": "/assets/songdemo1.jpg",
+    "audio": "/songs/s1.mp3",
+    "duration": "4:12"
+  },
+  {
+    "id": 2,
+    "title": "Baarishein",
+    "artist": "Anuv Jain",
+    "album": "Singles",
+    "cover": "/assets/songdemo2.jpg",
+    "audio": "/songs/s2.mp3",
+    "duration": "3:46"
+  },
+  {
+    "id": 3,
+    "title": "Dil Diyan Gallan",
+    "artist": "Atif Aslam",
+    "album": "Tiger Zinda Hai",
+    "cover": "/assets/songdemo3.jpg",
+    "audio": "/songs/s3.mp3",
+    "duration": "4:20"
+  },
+  {
+    "id": 4,
+    "title": "Oporajita",
+    "artist": "Tahsan Khan",
+    "album": "Bondhu",
+    "cover": "/assets/songdemo4.jpg",
+    "audio": "/songs/s4.mp3",
+    "duration": "3:58"
+  },
+  {
+    "id": 5,
+    "title": "Oniket Prantor",
+    "artist": "Artcell",
+    "album": "Onno Shomoy",
+    "cover": "/assets/songdemo5.jpg",
+    "audio": "/songs/s5.mp3",
+    "duration": "9:15"
+  },
+  {
+    "id": 6,
+    "title": "Let Me Down Slowly",
+    "artist": "Alec Benjamin",
+    "album": "Narrated For You",
+    "cover": "/assets/songdemo6.jpg",
+    "audio": "/songs/s6.mp3",
+    "duration": "2:59"
+  },
+  {
+    "id": 7,
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "album": "Divide",
+    "cover": "/assets/songdemo7.jpg",
+    "audio": "/songs/s7.mp3",
+    "duration": "4:23"
+  },
+  {
+    "id": 8,
+    "title": "Night Changes",
+    "artist": "One Direction",
+    "album": "Four",
+    "cover": "/assets/songdemo8.jpg",
+    "audio": "/songs/s8.mp3",
+    "duration": "3:46"
+  },
+  {
+    "id": 9,
+    "title": "Someone You Loved",
+    "artist": "Lewis Capaldi",
+    "album": "Divinely Uninspired to a Hellish Extent",
+    "cover": "/assets/songdemo9.jpg",
+    "audio": "/songs/s9.mp3",
+    "duration": "3:02"
+  },
+  {
+    "id": 10,
+    "title": "Shonar Bangla",
+    "artist": "Arnob",
+    "album": "Bangla Classics",
+    "cover": "/assets/songdemo10.jpg",
+    "audio": "/songs/s10.mp3",
+    "duration": "4:10"
+  }
+]
