@@ -2,44 +2,40 @@ import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Library from "./components/Library/Library";
-import Main from "./components/RightMain/Main";
+import HomePage from "./components/Homepage/Homepage";
 import Login from "./components/Login/Login";
 import MainSongPlay from "./components/MainSongPlaylist/MainSongPlay";
 import Signup from "./components/Signup/Signup";
 import UserDashboard from "./components/UserDashboard/UserDashboard";
+import ProtectedRoute from "./ProtectedRoute";
+
 
 const App = () => {
   return (
-    
     <BrowserRouter>
       <Routes>
-        {/* Home Route */}
-        
+        {/* Public Routes */}
+        <Route path="/" element={<HomePage />} />
+        {/* Homepage with Navbar + Library + Main */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        {/* Protected Routes */}
         <Route
-          path="/"
+          path="/dashboard"
           element={
-            <div>
-              {/* <UserDashboard/> */}
-              <Navbar />
-              <div className="flex gap-2">
-                <Library />
-                <Main />
-              </div>
-            </div>
+            <ProtectedRoute>
+              <UserDashboard />
+            </ProtectedRoute>
           }
         />
-
-         {/* Singup Route */}
-        <Route path="/signup" element={<Signup />} />
-
-        {/* Login Route */}
-        <Route path="/login" element={<Login />} />
-
-        {/* Playlist Route */}
-
-        <Route path="/playlist" element={<MainSongPlay />} />
+        <Route
+          path="/playlist"
+          element={
+            <ProtectedRoute>
+              <MainSongPlay />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
