@@ -7,7 +7,14 @@ import { BsBrowserSafari } from "react-icons/bs";
 import { IoIosNotifications } from "react-icons/io";
 import { MdGroups } from "react-icons/md";
 
+import { useAuth } from "../../context/AuthContext";
+
 const UserNavbar = () => {
+
+  const {user} = useAuth();
+  const email = user?.email || "";
+
+  const firstLetter = email.charAt(0).toUpperCase();
 
     const navigate = useNavigate();
 
@@ -42,7 +49,7 @@ const UserNavbar = () => {
           <ul className="font-bold"><IoIosNotifications className="h-[20px] w-[20px] text-gray-400" /></ul>
           <ul><MdGroups className="h-[20px] w-[20px] text-gray-400" /></ul>
           <div className="h-[50px] w-[50px] bg-[#1F1F1F] rounded-full flex justify-center items-center"><ul onClick={() => navigate("#")} className="bg-[#7B4A31] h-[35px] w-[35px] rounded-full flex items-center justify-center text-black font-bold cursor-pointer">
-            <span>A</span>
+            <span>{firstLetter}</span>
           </ul></div>
         </li>
       </div>
