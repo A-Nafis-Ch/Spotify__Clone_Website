@@ -40,7 +40,7 @@
     "title": "Oniket Prantor",
     "artist": "Artcell",
     "album": "Onno Shomoy",
-    "cover": "/assets/songdemo5.jpg",
+    "cover": "/assets/songdemo5.jpeg",
     "audio": "/songs/s5.mp3",
     "duration": "9:15"
   },
@@ -67,7 +67,7 @@
     "title": "Night Changes",
     "artist": "One Direction",
     "album": "Four",
-    "cover": "/assets/songdemo8.jpg",
+    "cover": "/assets/songdemo8.jpeg",
     "audio": "/songs/s8.mp3",
     "duration": "3:46"
   },
@@ -76,7 +76,7 @@
     "title": "Someone You Loved",
     "artist": "Lewis Capaldi",
     "album": "Divinely Uninspired to a Hellish Extent",
-    "cover": "/assets/songdemo9.jpg",
+    "cover": "/assets/songdemo9.jpeg",
     "audio": "/songs/s9.mp3",
     "duration": "3:02"
   },
