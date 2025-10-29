@@ -1,6 +1,8 @@
 import React from "react";
 
 const Trendingcard = ({ song, onClick }) => {
+
+  if(!song) return null;
   return (
     <div
       key={song.id}

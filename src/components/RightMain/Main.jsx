@@ -78,52 +78,40 @@ const Main = () => {
       {/* ================= POPULAR ALBUMS ================= */}
       <div className="popular-album mt-8 w-full">
         <h1 className="text-2xl font-bold mb-4">Popular Albums and Singles</h1>
-        <div className="flex flex-row gap-4 flex-wrap">
-          <PopularAlbum
-            img="../src/songdemo1.jpg"
-            h1="Music Heading"
-            p="Habib Wahid, Nancy"
+        <div className="flex flex-row gap-4 p-5 flex-wrap">
+          {songs.slice(4,8).map((song) =>(
+
+            <PopularAlbum key={song.id}
+              song={song}
           />
-          <PopularAlbum
-            img="../src/songdemo2.jpg"
-            h1="Don't Say You Love Me"
-            p="Jin"
-          />
-          <PopularAlbum
-            img="../src/songdemo3.jpg"
-            h1="Kashish"
-            p="Afusic, AliSomroMusic"
-          />
-          <PopularAlbum
-            img="../src/songdemo4.jpg"
-            h1="Pal Pal"
-            p="Shilpa Rao, Ujwal"
-          />
+          
+          ))}
+
         </div>
       </div>
 
       {/* ================= POPULAR RADIO ================= */}
       <div className="popular-radio mt-8 w-full">
         <h1 className="text-2xl font-bold mb-4">Popular Radio</h1>
-        <div className="flex flex-row gap-4 flex-wrap">
-          <PopularRadio img="../src/songdemo1.jpg" p="Habib Wahid, Nancy" />
-          <PopularRadio img="../src/songdemo2.jpg" p="Jin" />
-          <PopularRadio img="../src/songdemo3.jpg" p="Afusic, AliSomroMusic" />
-          <PopularRadio img="../src/songdemo4.jpg" p="Shilpa Rao, Ujwal" />
+        <div className="flex flex-row gap-4 p-5 flex-wrap">
+          {songs.slice(2,6).map((song) => (
+            <PopularRadio key={song.id} song={song} />
+          ))}
+          
+
         </div>
       </div>
 
       {/* ================= FEATURED CHARTS ================= */}
       <div className="feature-chart mt-8 w-full">
         <h1 className="text-2xl font-bold mb-4">Featured Charts</h1>
-        <div className="flex flex-row gap-4 flex-wrap">
-          <FeaturedCharts img="../src/songdemo1.jpg" p="Habib Wahid, Nancy" />
-          <FeaturedCharts img="../src/songdemo2.jpg" p="Jin" />
-          <FeaturedCharts
-            img="../src/songdemo3.jpg"
-            p="Afusic, AliSomroMusic"
-          />
-          <FeaturedCharts img="../src/songdemo4.jpg" p="Shilpa Rao, Ujwal" />
+        <div className="flex flex-row gap-4 p-5 flex-wrap">
+          {songs.slice(6,10).map((song) => (
+
+            <FeaturedCharts key={song.id} song={song}/>
+
+          ))}
+          
         </div>
       </div>
 

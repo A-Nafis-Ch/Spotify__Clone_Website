@@ -1,6 +1,7 @@
 import React from 'react'
 
 const PopularArtist = ({ song }) => {
+    if(!song) return null;
     return (
         <div key={song.id} className="h-[220px] w-[200px] bg-[#1F1F1F] mt-5  rounded-lg overflow-hidden p-2">
 
