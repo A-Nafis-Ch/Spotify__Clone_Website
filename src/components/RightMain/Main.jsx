@@ -8,24 +8,15 @@ import PopularRadio from "./PopularRadio";
 import FeaturedCharts from "./FeaturedCharts";
 import Footer from "../Footer";
 
+import { useData } from "../../context/DataContext";
+
 const Main = () => {
-  const [songs, setSongs] = useState([]);
+
+  const { songs } = useData();
+  
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchSongs = async () => {
-      try {
-        const res = await fetch("/data/spotify.json");
-        const data = await res.json();
-        console.log("Fetched songs data:", data);
-        setSongs(data);
-      } catch (error) {
-        console.error("Error fetching songs:", error);
-      }
-    };
 
-    fetchSongs();
-  }, []);
 
   return (
     <div className="h-[88vh] w-[70vw] rounded-lg bg-[#121212] text-white flex flex-col items-start p-5 overflow-y-scroll">
