@@ -30,7 +30,7 @@ const App = () => {
             }
           />
           <Route
-            path="/playlist"
+            path="/playlist/:id"
             element={
               <ProtectedRoute>
                 <MainSongPlay />

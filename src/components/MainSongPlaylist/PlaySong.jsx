@@ -7,25 +7,37 @@ import { IoIosList } from "react-icons/io";
 import { CiClock2 } from "react-icons/ci";
 import Trendingcard from "../RightMain/Trendingcard";
 
+import { useParams } from "react-router-dom";
+import { useData } from "../../context/DataContext";
+
 const PlaySong = () => {
+
+  const { id } = useParams();
+  const { songs } = useData();
+
+  const song = songs.find((s) => s.id === parseInt(id));
+
+  if(!song) return <p>Loading song...</p>;
+
+
   return (
-    <div className="h-[88vh] w-[70vw] rounded-lg bg-[#121212] text-white flex flex-col p-2 overflow-y-scroll">
+    <div key={song.id} className="h-[88vh] w-[70vw] rounded-lg bg-[#121212] text-white flex flex-col p-2 overflow-y-scroll">
       <div className="upperSongPlayer flex flex-row gap-5">
         <div className="songimg">
           <img
             className="h-[170px] w-full object-cover"
-            src="../src/songdemo3.jpg"
-            alt="songimg"
+            src={song.cover}
+            alt={song.title}
           />
         </div>
         <div className="songInfo p-4">
           <p className="text-[15px]">Single</p>
-          <h2 className="text-[70px] font-bold">Kashish</h2>
+          <h2 className="text-[70px] font-bold">{song.title}</h2>
           <p>
             <span className="font-bold">
-              Ashish Bhaatia . Omar Sanu . Kasish Ratnani{" "}
+              {song.artist}
             </span>
-            . 2024 . 1song, 3mins 30sec
+            . 2024 . 1song, {song.duration}
           </p>
         </div>
       </div>
@@ -58,9 +70,9 @@ const PlaySong = () => {
             <FaCirclePlay />
           </div>
           <div className="song">
-            <h3 className="text-7px font-bold">Kashish</h3>
+            <h3 className="text-7px font-bold">{song.title}</h3>
             <p className="text-6px">
-              Ashish Bhaatia, Omar Sanu, Kasish Ratnani
+              {song.artist}
             </p>
           </div>
           <div className="add-song">
@@ -68,7 +80,7 @@ const PlaySong = () => {
           </div>
 
           <div className="time-duration">
-            <p>2:49</p>
+            <p>{song.duration}</p>
           </div>
           <div className="more-options">
             <IoIosMore />
@@ -83,7 +95,7 @@ const PlaySong = () => {
       </div>
 
       <div className="more-playlist mt-4 p-5  ">
-        <h1 className="text-2xl font-bold">Trending songs by Kashish</h1>
+        <h1 className="text-2xl font-bold">Trending songs by {song.title}</h1>
         <div className="morePlaylistList flex flex-row justify-center items-center gap-3">
           <Trendingcard
             img="../src/songdemo1.jpg"

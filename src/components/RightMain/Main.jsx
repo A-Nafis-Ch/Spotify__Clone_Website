@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+
 
 import Trendingcard from "./Trendingcard";
 import PopularArtist from "./PopularArtist";
@@ -33,7 +33,7 @@ const Main = () => {
                 <Trendingcard
                   key={song.id}
                   song={song}
-                  onClick={() => navigate("/playlist")}
+                  onClick={() => navigate(`/playlist/${song.id}`)}
                 />
               ))
           ) : (
@@ -48,7 +48,7 @@ const Main = () => {
             <Trendingcard
               key={song.id}
               song={song}
-              onClick={() => navigate("#")}
+              onClick={() => navigate(`/playlist/${song.id}`)}
             />
           ))}
         </div>
