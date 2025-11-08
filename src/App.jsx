@@ -9,6 +9,7 @@ import MainSongPlay from "./components/MainSongPlaylist/MainSongPlay";
 import Signup from "./components/Signup/Signup";
 import UserDashboard from "./components/UserDashboard/UserDashboard";
 import ProtectedRoute from "./ProtectedRoute";
+import UserMainSongPlay from "./components/UserMainSongPlaylist/UserMainSongPlay";
 
 const App = () => {
   return (
@@ -34,6 +35,15 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <MainSongPlay />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/userplaylist/:id"
+            element={
+              <ProtectedRoute>
+                <UserMainSongPlay />
               </ProtectedRoute>
             }
           />

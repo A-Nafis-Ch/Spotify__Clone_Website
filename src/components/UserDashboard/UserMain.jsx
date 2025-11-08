@@ -52,7 +52,7 @@ const UserMain = () => {
               <Trendingcard
                 key={song.id}
                 song={song}
-                onClick={() => navigate("/playlist")}
+                onClick={() => navigate(`/userplaylist/${song.id}`)}
               />
             ))}
           </div>
