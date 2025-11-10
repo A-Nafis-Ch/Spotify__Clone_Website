@@ -24,7 +24,7 @@ const UserNavbar = () => {
         <SlSocialSpotify className="h-[40px] md:h-[40px] lg:h-[40px] w-[30px] md:w-[30px] lg:w-[30px] text-green-400" />
 
         <RiHome5Line
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/dashboard")}
           className="bg-[#1F1F1F] h-[40px] w-[40px] cursor-pointer rounded-full p-2"
         />
       </div>

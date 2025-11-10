@@ -7,7 +7,7 @@ const MainSongPlay = () => {
   return (
     <div>
         <Navbar />
-        <div className="flex gap-1 h-[88vh]">
+        <div className="flex gap-1 h-[77vh]">
              <Library />
         <PlaySong />
         

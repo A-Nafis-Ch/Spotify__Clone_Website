@@ -99,6 +99,7 @@ const PlaySong = () => {
       <div className="more-playlist mt-4 p-5  ">
         <h1 className="text-2xl font-bold">Trending songs by {song.title}</h1>
         <div className="morePlaylistList flex flex-row justify-center items-center gap-3">
+          
           <Trendingcard
             key={song.id}
             song={song}

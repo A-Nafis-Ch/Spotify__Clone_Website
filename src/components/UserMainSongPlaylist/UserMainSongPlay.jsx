@@ -1,8 +1,8 @@
 import Footer from "../Footer";
 import UserLibrary from "../UserDashboard/UserLibrary";
 import UserNavbar from "../UserDashboard/UserNavbar";
-import PlaySong from "../MainSongPlaylist/PlaySong";
 import Playbar from "../UserDashboard/Playbar"
+import UserPlaySong from "./UserPlaySong";
 
 const UserMainSongPlay = () => {
   return (
@@ -10,7 +10,7 @@ const UserMainSongPlay = () => {
       <UserNavbar />
       <div className="flex gap-1 h-[77vh]">
         <UserLibrary />
-        <PlaySong />
+        <UserPlaySong />
       </div>
       <div>
         <Playbar />
